@@ -1,0 +1,79 @@
+.card {
+    width: 237px;
+    height: 460px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    position: relative;
+    transition: 0.4s;
+    margin: 30px 0;
+
+    &:hover {
+        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    &__top{
+        height: 290px;
+        overflow: hidden;
+        
+        &-img{
+            width: 100px;
+        }
+
+        &-label{
+            width: 47px;
+            height: 24px;
+            background-color: $lightOrange;
+            text-align: center;
+            padding-top: 3px;
+            color: #fff;
+            border-radius: 8px;
+            position: absolute;
+            top: 243px;
+            left: 10px; 
+        }
+    }
+
+    &__prices{
+        display: flex;
+        font-weight: 700;
+        margin-left: 10px;
+
+        &-discount{
+            margin-left: 12px;
+            color: $gray;
+        }
+
+        &-common{
+            font-size: 18px;
+        }
+    }
+
+    &__title{
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    &__buy{
+        width: 150px;
+        height: 44px;
+        color: #fff;
+        background-color: $gray;
+        border-radius: 12px;
+        border: none;
+        margin-top: 12px;
+        margin-left: 40px;
+    }
+}
+
+
+.grid__card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid__h2{
+    margin-top: 66px;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}

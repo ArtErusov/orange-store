@@ -1,9 +1,11 @@
+
+
 * {
   padding: 0;
   margin: 0;
   list-style: none;
   outline: none;
-  font-family: 'Inter', system-ui, Tahoma, sans-serif;
+  font-family: 'Roboto', system-ui, Tahoma, sans-serif;
   box-sizing: border-box;
 }
 
@@ -15,7 +17,6 @@ html {
 body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  color: #000000;
 }
 
 a,
@@ -27,7 +28,7 @@ h2,
 h3,
 h4,
 h5 {
-  color: #000000;
+ 
 }
 
 h1 {
