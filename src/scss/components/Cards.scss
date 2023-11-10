@@ -1,3 +1,7 @@
+@import '../libs/MainVariable.scss';
+
+
+
 .card {
     width: 237px;
     height: 460px;
@@ -64,16 +68,45 @@
         margin-left: 40px;
     }
 }
+.grid{
+    &__card{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
 
-
-.grid__card{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    &__h2{
+        margin-top: 66px;
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
 }
 
-.grid__h2{
-    margin-top: 66px;
-    font-size: 30px;
-    font-weight: 600;
-    margin-bottom: 15px;
+.categories {
+  ul {
+    display: flex;
+    li {
+      background-color: #f9f9f9;
+      padding: 13px 30px;
+      border-radius: 10px;
+      margin-right: 10px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.1s ease-in-out;
+    //   @include noselect();
+
+      &:hover {
+        background-color: darken(#f9f9f9, 2%);
+      }
+
+      &:active {
+        background-color: darken(#f9f9f9, 5%);
+      }
+
+      &.active {
+        background-color: $orange;
+        color: #fff;
+      }
+    }
+  }
 }
