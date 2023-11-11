@@ -1,31 +1,34 @@
 import React, { useState } from "react";
-const CardItem = (props) =>{
+const CardItem = ({src, label, platforms, price, discount, text  }) =>{
 
-
- //-----------тестовый билд----------------
-const[clickUser, setClickUser] = useState(0);
-
-const clickСounter = () =>{
-    console.log('gegshrf');
-    setClickUser(clickUser + 1);
-};
-//------------------------------------------
+const [activeType, setActiveType] = React.useState(0);
 
 return(<div className="card">
+    
+    
     <div className="card__top"> 
-        <a href="#" className="card__top-img"><img src={props.src} alt="" /></a>
-        <div className="card__top-label">{props.label}</div> 
+        <a href="#" className="card__top-img"><img src={src} alt="" /></a>
+        <div className="card__top-label">{label}</div> 
     </div>
+    <div className="card__platforms">
+        <ul>
+            {/* ?проверяет есть ли массив */}
+            {/* !!!!работает не корректно!!! не активирует нужный селектор */}
+            {platforms.map((size, index) => (
+            <li onClick={() => setActiveType(index)} className={"activeType === index" ? 'active' : ''}>{size}</li>))}
+        </ul>
+    </div>
+
     <div className="card__bottom">
         <div className="card__prices">
-            <div className="card__prices-common">{props.price}</div>
-            <div className="card__prices-discount">{props.discount}</div>
+            <div className="card__prices-common">{price}</div>
+            <div className="card__prices-discount">{discount}</div>
         </div>
-        <p className="card__title">{props.text}</p>
+        <p className="card__title">{text}</p>
+
     </div>
     <div>
-    <p>Счетчик тест = {clickUser}</p>
-    <button onClick={clickСounter} className="card__buy">Купить</button>
+    <button className="card__buy">Купить</button>
     </div>
     </div>
 );

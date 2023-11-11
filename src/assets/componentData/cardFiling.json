@@ -1,0 +1,42 @@
+[
+    {
+      "src": "http://localhost:3000/static/media/valhalla.819b878dd0ebff4ebfae.png",
+      "label": "38%",
+      "discount": "3̶3̶5̶0̶ ̶₽̶ ",
+      "price": "2950 ₽",
+      "platforms": ["ps 4", "ps 5", "PC"],
+      "text": "Игра для PlayStation 4/5 Ubisoft Assassin's Creed: Вальгалла"
+      },
+    {
+    "src": "http://localhost:3000/static/media/cybpanc.7d86290513d8c519788f.png",
+    "label": "40%",
+    "discount": "3̶3̶5̶0̶ ̶₽̶ ",
+    "price": "2950 ₽",
+    "platforms": ["switch"],
+    "text": "Игра для PlayStation 4/5 Ubisoft Assassin's Creed: Вальгалла"
+    },
+    {
+    "src": "http://localhost:3000/static/media/mc2.a9dabe8a7dcba17777de.png",
+    "label": "38%",
+    "discount": "3̶3̶5̶0̶ ̶₽̶ ",
+    "price": "2950 ₽",
+    "platforms": ["switch"],
+    "text": "Игра для PlayStation 4/5 Ubisoft Assassin's Creed: Вальгалла"
+      },
+    {
+    "src": "http://localhost:3000/static/media/rdr2.0ac94361156692299c37.png",
+    "label": "38%",
+    "discount": "3̶3̶5̶0̶ ̶₽̶ ",
+    "price": "2950 ₽",
+    "platforms": ["switch"],
+    "text": "Игра для PlayStation 4/5 Ubisoft Assassin's Creed: Вальгалла"
+    },
+    {
+    "src": "http://localhost:3000/static/media/biomutant.ea35bcfd9359805aa4a9.png",
+    "label": "38%",
+    "discount": "3̶3̶5̶0̶ ̶₽̶ ",
+    "price": "2950 ₽",
+    "platforms": ["ps 4", "ps 5"],
+    "text": "Игра для PlayStation 4/5 Ubisoft Assassin's Creed:aaaaa Вальгалла"
+    }
+]
