@@ -4,19 +4,20 @@
 
 .card {
     width: 237px;
-    height: 500px;
+    height: 480px;
     background-color: #ffffff;
     border-radius: 12px;
     position: relative;
     transition: 0.4s;
-    margin: 30px 0;
+    margin-top: 35px;
 
     &:hover {
         box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
     }
 
     &__top{
-        height: 290px;
+        margin-top: 20px;
+        height: 250px;
         overflow: hidden;
         
         &-img{
@@ -40,6 +41,8 @@
     &__platforms{
       ul {
         display: flex;
+        margin-top: 10px;
+        
         li {
           background-color: $gray;
           color: #fff;
@@ -88,14 +91,17 @@
     }
 
     &__buy{
-        width: 150px;
+        width: 151px;
         height: 44px;
         color: #fff;
         background-color: $gray;
         border-radius: 12px;
         border: none;
-        margin-top: 12px;
-        margin-left: 40px;
+        // margin-top: 12px;
+        // margin-left: 40px;
+        position: absolute;
+        bottom: 20px;
+        left: 43px
     }
 }
 .grid{
@@ -103,6 +109,11 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
+
+    &__flex{
+      display: flex;
+      justify-content: space-between;
+  }
 
     &__h2{
         margin-top: 66px;
@@ -136,6 +147,61 @@
       &.active {
         background-color: $orange;
         color: #fff;
+      }
+    }
+  }
+}
+
+
+.sort {
+  margin-top: 12px;
+  position: relative;
+  &__label {
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-right: 8px;
+    }
+
+    b {
+      margin-right: 8px;
+    }
+
+    span {
+      color: $orange;
+      border-bottom: 1px dashed $orange;
+      cursor: pointer;
+    }
+  }
+
+  &__popup {
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    margin-top: 15px;
+    background: #ffffff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px 0;
+    width: 160px;
+
+    ul {
+      overflow: hidden;
+      li {
+        padding: 12px 20px;
+        cursor: pointer;
+
+        &.active,
+        &:hover {
+          background: rgba(254, 95, 30, 0.05);
+        }
+
+        &.active {
+          font-weight: bold;
+          color: $orange;
+        }
       }
     }
   }

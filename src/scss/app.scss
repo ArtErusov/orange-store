@@ -1,6 +1,12 @@
 @import 'libs/reset';
-@import 'MainHeader';
+@import 'components/Header';
 @import 'libs/MainVariable';
 @import 'components/Cards.scss';
+
+
+.container{
+    margin: 0 auto;
+    max-width: 1260px; 
+}
 
 

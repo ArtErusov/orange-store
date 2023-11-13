@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 const CardItem = ({src, label, platforms, price, discount, text  }) =>{
 
-const [activeType, setActiveType] = React.useState(0);
+const [activeType, setActiveType] = useState(0);
 
 return(<div className="card">
     
@@ -13,9 +13,8 @@ return(<div className="card">
     <div className="card__platforms">
         <ul>
             {/* ?проверяет есть ли массив */}
-            {/* !!!!работает не корректно!!! не активирует нужный селектор */}
-            {platforms.map((size, index) => (
-            <li onClick={() => setActiveType(index)} className={"activeType === index" ? 'active' : ''}>{size}</li>))}
+            {platforms?.map((size, index) => (
+            <li onClick={() => setActiveType(index)} className={activeType === index ? 'active' : ''}>{size}</li>))}
         </ul>
     </div>
 

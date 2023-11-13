@@ -11,7 +11,7 @@ const CardSelect = ({selectCategory}) =>{
     return(<div className="categories">
         <ul>
             {selectCategory.map((value, indexItem) => 
-            <li onClick={() => onClickCategory(indexItem)} className={activeIndex === indexItem ? 'active': ''}>{value}</li>
+            <li key={indexItem} onClick={() => onClickCategory(indexItem)} className={activeIndex === indexItem ? 'active': ''}>{value}</li>
             // <li onClick={() => setActiveIndex(indexItem)} className={activeIndex === indexItem ? 'active': ''}>{value}</li>
             //альтернативное написание заменяющее const onClickCategory
             )}

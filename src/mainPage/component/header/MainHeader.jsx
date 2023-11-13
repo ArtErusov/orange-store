@@ -1,9 +1,9 @@
 import BodyHeader from "./BodyHeader";
 import TopHeader from "./TopHeader";
 
-function MainHeader() {
+function MainHeader(props) {
   return (<div>
-    <TopHeader />
+    <TopHeader cityList={props.cityList} />
     <BodyHeader />
   </div>
   );

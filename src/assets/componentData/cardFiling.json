@@ -1,42 +1,84 @@
 [
     {
-      "src": "http://localhost:3000/static/media/valhalla.819b878dd0ebff4ebfae.png",
-      "label": "38%",
-      "discount": "3̶3̶5̶0̶ ̶₽̶ ",
-      "price": "2950 ₽",
-      "platforms": ["ps 4", "ps 5", "PC"],
-      "text": "Игра для PlayStation 4/5 Ubisoft Assassin's Creed: Вальгалла"
+    "id": 123523423,
+    "src": "https://img.mvideo.ru/Pdb/small_pic/480/400221326b.jpg",
+    "price": "7 499 ₽",
+    "platforms": ["ps 5", "PC"],
+    "text": "CI Games Lords of the Fallen"
       },
     {
-    "src": "http://localhost:3000/static/media/cybpanc.7d86290513d8c519788f.png",
-    "label": "40%",
-    "discount": "3̶3̶5̶0̶ ̶₽̶ ",
-    "price": "2950 ₽",
-    "platforms": ["switch"],
-    "text": "Игра для PlayStation 4/5 Ubisoft Assassin's Creed: Вальгалла"
+    "id": 2432412,
+    "src": "https://img.mvideo.ru/Pdb/small_pic/480/400177672b.jpg",
+    "price": "9 950 ₽",
+    "platforms": ["ps 5"],
+    "text": "PlayStation Marvel's Spider-Man 2"
     },
     {
-    "src": "http://localhost:3000/static/media/mc2.a9dabe8a7dcba17777de.png",
-    "label": "38%",
-    "discount": "3̶3̶5̶0̶ ̶₽̶ ",
-    "price": "2950 ₽",
-    "platforms": ["switch"],
-    "text": "Игра для PlayStation 4/5 Ubisoft Assassin's Creed: Вальгалла"
+    "id": 34216544812,
+    "src": "https://img.mvideo.ru/Pdb/small_pic/480/400083897b.jpg",
+    "label": "28%",
+    "discount": "5 999 ̶₽",
+    "price": "4 499 ₽",
+    "platforms": ["ps 4", "Xbox", "ps 5", "PC"],
+    "text": "Capcom Resident Evil 4 Remake Стандартное издание"
       },
     {
-    "src": "http://localhost:3000/static/media/rdr2.0ac94361156692299c37.png",
-    "label": "38%",
-    "discount": "3̶3̶5̶0̶ ̶₽̶ ",
-    "price": "2950 ₽",
-    "platforms": ["switch"],
-    "text": "Игра для PlayStation 4/5 Ubisoft Assassin's Creed: Вальгалла"
+    "id": 4825632563,
+    "src": "https://img.mvideo.ru/Pdb/small_pic/480/40078428b.jpg",
+    "label": "30%",
+    "discount": "5950 ₽",
+    "price": "4950 ₽",
+    "platforms": ["Xbox", "ps 5"],
+    "text": "Square Enix Forspoken, русские субтитры"
     },
     {
-    "src": "http://localhost:3000/static/media/biomutant.ea35bcfd9359805aa4a9.png",
-    "label": "38%",
-    "discount": "3̶3̶5̶0̶ ̶₽̶ ",
-    "price": "2950 ₽",
-    "platforms": ["ps 4", "ps 5"],
-    "text": "Игра для PlayStation 4/5 Ubisoft Assassin's Creed:aaaaa Вальгалла"
-    }
+    "id": 582132412512,
+    "src": "https://img.mvideo.ru/Pdb/small_pic/480/400120392b.jpg",
+    "label": "20%",
+    "discount": "5999 ₽",
+    "price": "4999 ₽",
+    "platforms": ["Xbox"],
+    "text": "WB Games Hogwarts Legacy Стандартное издание"
+    },
+    {
+    "id": 63265963,
+    "src": "https://img.mvideo.ru/Pdb/small_pic/480/400146620b.jpg",
+    "price": "7 599 ₽",
+    "platforms": ["Switch", "Xbox", "ps 5"],
+    "text": "WB Games Mortal Kombat 1"
+    },
+    {
+    "id": 763345325456,
+    "src": "https://img.mvideo.ru/Pdb/small_pic/480/40078771b.jpg",
+    "label": "24%",
+    "discount": "5999 ₽",
+    "price": "4499 ₽",
+    "platforms": ["Xbox", "ps 5", "Switch"],
+    "text": "Bandai Namco Elden Ring русские субтитры"
+    },
+    {
+    "id": 8925185002,
+    "src": "https://img.mvideo.ru/Pdb/small_pic/480/400076052b.jpg",
+    "label": "34%",
+    "discount": "6999 ₽",
+    "price": "4899 ₽",
+    "platforms": ["Xbox", "ps 5", "Switch"],
+    "text": "Square Enix Crisis Core: Final Fantasy VII Reunion"
+    },
+    {
+    "id": 932423523423,
+    "src": "https://img.mvideo.ru/Pdb/small_pic/480/400131129b.jpg",
+    "price": "5899 ₽",
+    "platforms": ["Xbox", "ps 5", "PC"],
+    "text": "Deep Silver Dead Island 2 Издание первого дня"
+    },
+    {
+      "id": 1041212112523654765,
+      "src": "https://img.mvideo.ru/Pdb/small_pic/480/40079003b.jpg",
+      "label": "2%",
+      "discount": "4899 ₽",
+      "price": "4680 ₽",
+      "platforms": ["Xbox", "ps 5", "Switch"],
+      "text": "Bandai Namco Elden Ring русские субтитры"
+      }
 ]
