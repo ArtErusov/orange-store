@@ -8,7 +8,7 @@ return(<div className="card">
     
     <div className="card__top"> 
         <a href="#" className="card__top-img"><img src={src} alt="" /></a>
-        <div className="card__top-label">{label}</div> 
+       <div className={label === undefined ? '' : 'card__top-label'}>{label}</div> 
     </div>
     <div className="card__platforms">
         <ul>

@@ -1,0 +1,22 @@
+@import '../scss/libs/reset';
+@import '../scss/libs/MainVariable.scss';
+// альтернативный способ подключения CSS
+.root{
+    margin: 10px auto;
+    width: 460px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    
+
+    img{
+        margin-bottom: 40px;
+        width: 460px; 
+    }
+
+    p{
+        align-items: center;  
+    }
+
+    
+}

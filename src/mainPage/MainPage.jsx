@@ -1,15 +1,13 @@
-import MainHeader from './component/header/MainHeader';
-import Slider from './component/slider/Slider';
-import Cards from './component/Cards/Cards'
+import Slider from './slider/Slider';
+import Cards from './Cards/Cards'
 
 
 
 function MainPage(props) {
 
   return (<div>
-      <MainHeader cityList={props.cityList}/>
       <Slider sliderItems={props.sliderItems} />
-      <Cards cardFiling={props.cardFiling} selectCategory={props.selectCategory} />
+      <Cards isLoading={props.isLoading} cardFiling={props.cardFiling} selectCategory={props.selectCategory} />
    </div>
   );
 }

@@ -108,11 +108,34 @@
     &__card{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+        @media(max-width: 1200px){
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        @media(max-width: 952px){
+        grid-template-columns: 1fr 1fr 1fr;
+       }
+       @media(max-width: 720px){
+        grid-template-columns: 1fr 1fr;
+       }
+      }
+    &__media{
+      @media(max-width: 970px){
+        text-align: center;
+        }
     }
+
+
 
     &__flex{
       display: flex;
       justify-content: space-between;
+
+    @media(max-width: 970px){
+      flex-direction: column;
+      }
+
+
   }
 
     &__h2{
@@ -121,6 +144,7 @@
         font-weight: 600;
         margin-bottom: 15px;
     }
+
 }
 
 .categories {

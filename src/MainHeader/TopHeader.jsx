@@ -18,7 +18,7 @@ function TopHeader({cityList}) {
 
             <nav>
                 <ul className="headerTop__right">
-                    <li className="menu__item"><a href="" className="shares">Акции</a></li>
+                    <li className="menu__item"><a href="http://localhost:3000/P" className="shares">Акции</a></li>
                     <li className="menu__item"><a href="">Trade-In</a></li>
                     <li className="menu__item"><a href="">Новости</a></li>
                     <li className="menu__item"><a href="">Обзоры</a></li>
