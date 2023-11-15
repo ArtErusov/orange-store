@@ -32,16 +32,6 @@ function Cards(props) {
   );
 }
 
-{/* <div className="grid__card">
-{props.cardFiling?.map((item) => (isLoading ? <CardSceleton /> : 
-    <CardItem 
-      key={item.id}
-      src={item.src}
-      label={item.label}
-      discount={item.discount}
-      platforms={item.platforms}
-      price={item.price} 
-      text={item.text} /> */}
 export default Cards;
 
 

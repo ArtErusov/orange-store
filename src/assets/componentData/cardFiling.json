@@ -1,6 +1,6 @@
 [
     {
-    "id": 123523423,
+    "id": 1235234,
     "src": "https://img.mvideo.ru/Pdb/small_pic/480/400221326b.jpg",
     "price": "7 499 ₽",
     "platforms": ["ps 5", "PC"],
@@ -14,7 +14,7 @@
     "text": "PlayStation Marvel's Spider-Man 2"
     },
     {
-    "id": 34216544812,
+    "id": 3421654,
     "src": "https://img.mvideo.ru/Pdb/small_pic/480/400083897b.jpg",
     "label": "28%",
     "discount": "5 999 ̶₽",
@@ -23,20 +23,20 @@
     "text": "Capcom Resident Evil 4 Remake Стандартное издание"
       },
     {
-    "id": 4825632563,
+    "id": 4825632,
     "src": "https://img.mvideo.ru/Pdb/small_pic/480/40078428b.jpg",
     "label": "30%",
-    "discount": "5950 ₽",
-    "price": "4950 ₽",
+    "discount": "5 950 ₽",
+    "price": "4 950 ₽",
     "platforms": ["Xbox", "ps 5"],
     "text": "Square Enix Forspoken, русские субтитры"
     },
     {
-    "id": 582132412512,
+    "id": 5821324,
     "src": "https://img.mvideo.ru/Pdb/small_pic/480/400120392b.jpg",
     "label": "20%",
-    "discount": "5999 ₽",
-    "price": "4999 ₽",
+    "discount": "5 999 ₽",
+    "price": "4 999 ₽",
     "platforms": ["Xbox"],
     "text": "WB Games Hogwarts Legacy Стандартное издание"
     },
@@ -48,37 +48,37 @@
     "text": "WB Games Mortal Kombat 1"
     },
     {
-    "id": 763345325456,
+    "id": 7633453,
     "src": "https://img.mvideo.ru/Pdb/small_pic/480/40078771b.jpg",
     "label": "24%",
-    "discount": "5999 ₽",
-    "price": "4499 ₽",
+    "discount": "5 999 ₽",
+    "price": "4 499 ₽",
     "platforms": ["Xbox", "ps 5", "Switch"],
     "text": "Bandai Namco Elden Ring русские субтитры"
     },
     {
-    "id": 8925185002,
+    "id": 8925185,
     "src": "https://img.mvideo.ru/Pdb/small_pic/480/400076052b.jpg",
     "label": "34%",
-    "discount": "6999 ₽",
-    "price": "4899 ₽",
+    "discount": "6 999 ₽",
+    "price": "4 899 ₽",
     "platforms": ["Xbox", "ps 5", "Switch"],
     "text": "Square Enix Crisis Core: Final Fantasy VII Reunion"
     },
     {
-    "id": 932423523423,
+    "id": 9324235,
     "src": "https://img.mvideo.ru/Pdb/small_pic/480/400131129b.jpg",
-    "price": "5899 ₽",
+    "price": "5 899 ₽",
     "platforms": ["Xbox", "ps 5", "PC"],
     "text": "Deep Silver Dead Island 2 Издание первого дня"
     },
     {
-      "id": 1041212112523654765,
-      "src": "https://img.mvideo.ru/Pdb/small_pic/480/40079003b.jpg",
-      "label": "2%",
-      "discount": "4899 ₽",
-      "price": "4680 ₽",
-      "platforms": ["Xbox", "ps 5", "Switch"],
-      "text": "Bandai Namco Elden Ring русские субтитры"
-      }
+    "id": 1041212,
+    "src": "https://img.mvideo.ru/Pdb/small_pic/480/40079003b.jpg",
+    "label": "2%",
+    "discount": "4 899 ₽",
+    "price": "4 680 ₽",
+    "platforms": ["Xbox", "ps 5", "Switch"],
+    "text": "Bandai Namco Elden Ring русские субтитры"
+    }
 ]

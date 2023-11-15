@@ -52,8 +52,7 @@ const selectCategory = ['Все платформы','PC','Ps 4','Ps 5','switch',
          <Route  path="" element={<MainPage isLoading={isLoading}  cardFiling={cardFiling} sliderItems={sliderItems} selectCategory={selectCategory}/>} />
          <Route  path="/p" element={<ProductPage />} />
          <Route  path='*' element={<NotFound />} />
-         <Route  path='/cart' element={<CartPage />} />
-
+         <Route  path='/cart' element={<CartPage cardFiling={cardFiling}/>} />
       </Routes>
    </div>
   );
