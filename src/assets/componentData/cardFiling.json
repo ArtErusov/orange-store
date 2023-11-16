@@ -3,14 +3,14 @@
     "id": 1235234,
     "src": "https://img.mvideo.ru/Pdb/small_pic/480/400221326b.jpg",
     "price": "7 499 ₽",
-    "platforms": ["ps 5", "PC"],
+    "platforms": ["ps5", "PC"],
     "text": "CI Games Lords of the Fallen"
       },
     {
     "id": 2432412,
     "src": "https://img.mvideo.ru/Pdb/small_pic/480/400177672b.jpg",
     "price": "9 950 ₽",
-    "platforms": ["ps 5"],
+    "platforms": ["ps5"],
     "text": "PlayStation Marvel's Spider-Man 2"
     },
     {
@@ -19,7 +19,7 @@
     "label": "28%",
     "discount": "5 999 ̶₽",
     "price": "4 499 ₽",
-    "platforms": ["ps 4", "Xbox", "ps 5", "PC"],
+    "platforms": ["ps4", "Xbox", "ps5", "PC"],
     "text": "Capcom Resident Evil 4 Remake Стандартное издание"
       },
     {
@@ -28,7 +28,7 @@
     "label": "30%",
     "discount": "5 950 ₽",
     "price": "4 950 ₽",
-    "platforms": ["Xbox", "ps 5"],
+    "platforms": ["Xbox", "ps5"],
     "text": "Square Enix Forspoken, русские субтитры"
     },
     {
@@ -44,7 +44,7 @@
     "id": 63265963,
     "src": "https://img.mvideo.ru/Pdb/small_pic/480/400146620b.jpg",
     "price": "7 599 ₽",
-    "platforms": ["Switch", "Xbox", "ps 5"],
+    "platforms": ["Switch", "Xbox", "ps5"],
     "text": "WB Games Mortal Kombat 1"
     },
     {
@@ -53,7 +53,7 @@
     "label": "24%",
     "discount": "5 999 ₽",
     "price": "4 499 ₽",
-    "platforms": ["Xbox", "ps 5", "Switch"],
+    "platforms": ["Xbox", "ps5", "Switch"],
     "text": "Bandai Namco Elden Ring русские субтитры"
     },
     {
@@ -62,14 +62,14 @@
     "label": "34%",
     "discount": "6 999 ₽",
     "price": "4 899 ₽",
-    "platforms": ["Xbox", "ps 5", "Switch"],
+    "platforms": ["Xbox", "ps5", "Switch"],
     "text": "Square Enix Crisis Core: Final Fantasy VII Reunion"
     },
     {
     "id": 9324235,
     "src": "https://img.mvideo.ru/Pdb/small_pic/480/400131129b.jpg",
     "price": "5 899 ₽",
-    "platforms": ["Xbox", "ps 5", "PC"],
+    "platforms": ["Xbox", "ps5", "PC"],
     "text": "Deep Silver Dead Island 2 Издание первого дня"
     },
     {
@@ -78,7 +78,7 @@
     "label": "2%",
     "discount": "4 899 ₽",
     "price": "4 680 ₽",
-    "platforms": ["Xbox", "ps 5", "Switch"],
+    "platforms": ["Xbox", "ps5", "Switch"],
     "text": "Bandai Namco Elden Ring русские субтитры"
     }
 ]
