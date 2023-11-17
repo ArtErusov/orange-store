@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
+import Search from "./component/Search";
 
 
 
-function BodyHeader() {
+function BodyHeader(props) {
 
   // ВЕРНУТЬСЯ К ПОСКУ ПОЗЖЕ
     return (
@@ -23,15 +24,12 @@ function BodyHeader() {
            </svg>
             Каталог</button>
         </div>
+          <Search searchValue={props.searchValue} setSearchValue={props.setSearchValue}/>
 
-    
-        
-        <div className="header__search">
-          {/* <input className="search__search-input" type="text" placeholder="Игры для PlayStation">
-          </input> */}
-          <a href="#" className="search__search-btn"></a>
-        </div>
         <div className="header__body-action">
+
+
+
         <Link to="http://localhost:3000/cart" >Тут будет корзина</Link>
         </div>
       </div>

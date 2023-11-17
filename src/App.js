@@ -29,14 +29,14 @@ function App() {
     slidCP:slidCP,
     slidER:slidER
   };
-
   const cityList = ['Москва', 'Санкт-Петербург', 'Екатеринбург', 'Казань', 'Ростов-на-Дону', 'Тула', 'Минск' ];
   const selectCategory = ['Все платформы','PC','Ps4','Ps5','switch','Xbox'];
 
+  const [searchValue, setSearchValue] = React.useState(''); //результаты поиска
 
   const [cardFiling, setCardFiling] = React.useState([]);
   const [isLoading, setIsLoading] = React.useState(true);
-
+console.log(searchValue);
 
   // тут передаю информацию из выбора категорий и сортировки, проблема в том что я фактически 2 раза юзаю юз стайт в 9 видео есть как это обойти+ 
   const [category, setCategory] = React.useState(0);
@@ -49,11 +49,9 @@ function App() {
 
     React.useEffect(() => {
       setIsLoading(true);
-      fetch(`https://65523e2c5c69a7790329c0eb.mockapi.io/items?sortBy=${sort.replace('-', '')}${serverCategory === 'Все платформы' ? `` : `&platforms=${serverCategory}`}&order=desc`)
-
-
-      // fetch('https://65523e2c5c69a7790329c0eb.mockapi.io/items?sortBy=price&order=desc') сортировка по цене от большего к меньшему
-      // fetch('https://65523e2c5c69a7790329c0eb.mockapi.io/items?sortBy=price&order=asc') от меньшего к большему
+      const orderSort = sort.includes('-') ? `asc` : `desc`;
+      const orderCategory = serverCategory === 'Все платформы' ? `` : `&platforms=${serverCategory}`;
+      fetch(`https://65523e2c5c69a7790329c0eb.mockapi.io/items?sortBy=${sort.replace('-', '')}${orderCategory}&order=${orderSort}`)
       .then((res) => res.json())
       .then((arr) => {
         setCardFiling(arr);
@@ -66,9 +64,9 @@ function App() {
 
 
   return (<div>
-      <MainHeader cityList={cityList}/>
+      <MainHeader searchValue={searchValue} setSearchValue={setSearchValue} cityList={cityList}/>
       <Routes>
-         <Route  path="" element={<MainPage onSaveCategory={saveCategoryHandler} onSaveSort={saveSortHandler} 
+         <Route  path="" element={<MainPage searchValue={searchValue} onSaveCategory={saveCategoryHandler} onSaveSort={saveSortHandler} 
          isLoading={isLoading}  cardFiling={cardFiling} sliderItems={sliderItems} selectCategory={selectCategory}/>} />
          <Route  path="/p" element={<ProductPage />} />
          <Route  path='*' element={<NotFound />} />

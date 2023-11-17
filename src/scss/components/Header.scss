@@ -92,14 +92,45 @@
     }
 }
 
-.header__search{
+.search{
     margin-left: 30px;
     height: 43px;
     width: 590px;
-  
+    padding-top: 10px;
+    padding-left: 20px;
     border:2px solid $gray;
     border-radius: 10px;
+    position: relative;
+
+    &__input{
+        width: 500px;  
+        // &:focus {
+        //         border:2px solid #ea1a1a;
+        //     }
+    }
+    
+    &__btn{
+        width: 53px;
+        height: 41px;
+        border-radius: 8px;
+        // background-color: red;
+        position: absolute;
+        top: 0;
+        right: 0;
+   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // -----------main__slider---------
