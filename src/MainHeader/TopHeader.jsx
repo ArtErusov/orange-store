@@ -1,5 +1,5 @@
 import SelectCity from "./component/SelectCity";
-
+import { Link } from "react-router-dom";
 
 function TopHeader({cityList}) {
     return (<div className="container">
@@ -9,8 +9,8 @@ function TopHeader({cityList}) {
                     <li className="menu__item">
                     <SelectCity cityList={cityList}/>
                     </li>
-                    <li className="menu__item"><a href="">Магазины</a></li>
-                    <li className="menu__item"><a href="">Оплата и доставка</a></li>
+                    <li className="menu__item"><Link to="http://localhost:3000/non">Магазины</Link></li>
+                    <li className="menu__item"><Link to="http://localhost:3000/non">Оплата и доставка</Link></li>
                 </ul>
             </nav>
 
@@ -18,12 +18,12 @@ function TopHeader({cityList}) {
 
             <nav>
                 <ul className="headerTop__right">
-                    <li className="menu__item"><a href="http://localhost:3000/P" className="shares">Акции</a></li>
-                    <li className="menu__item"><a href="">Trade-In</a></li>
-                    <li className="menu__item"><a href="">Новости</a></li>
-                    <li className="menu__item"><a href="">Обзоры</a></li>
-                    <li className="menu__item"><a href="">О нас</a></li>
-                    <li className="menu__item"><a href="">Статус заказа</a></li>
+                    <li className="menu__item"><Link to="http://localhost:3000/P" className="shares">Акции</Link></li>
+                    <li className="menu__item"><Link to="http://localhost:3000/non">Trade-In</Link></li>
+                    <li className="menu__item"><Link to="http://localhost:3000/non">Новости</Link></li>
+                    <li className="menu__item"><Link to="http://localhost:3000/help">Поддержка</Link></li>
+                    <li className="menu__item"><Link to="http://localhost:3000/non">О нас</Link></li>
+                    <li className="menu__item"><Link to="http://localhost:3000/non">Статус заказа</Link></li>
                 </ul>
             </nav>
         </div>

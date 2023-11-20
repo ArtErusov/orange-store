@@ -230,3 +230,42 @@
     }
   }
 }
+
+.pagiation{
+  // previous глобальный класс
+  // .previous{
+  //  background-color: #fc1515; 
+  // }
+    margin-top: 20px;
+  li{
+    display: inline-block;
+    
+
+    a{
+      display: inline-block;
+      cursor: pointer;
+      font-size: 18px;
+      text-align: center;
+      width: 45px;
+      line-height: 42px;
+      height: 45px;
+      // border: 2px solid $gray;
+      border-radius: 8px;
+      margin-right: 10px;
+      transition: 0.4s;
+      color: $gray;
+
+      &:hover{
+        background-color: $lightOrange;
+        color: rgb(255, 255, 255);
+      }
+    }
+    
+  }
+}
+
+.selected{
+  a{
+    border: 2px solid $gray;
+  }
+}

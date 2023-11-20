@@ -71,11 +71,23 @@
     }
 }
 
-.header__body{
+.bodyHead{
     display: flex;
     margin-top: 25px;
+    
+    
+    
+    &__action{
+        display: flex;
+        align-items: center;
+        justify-content: end;
 
-    &-btn{
+        &-select{
+            padding: auto;
+        }
+    }
+
+    &__btn{
         margin-left: 30px;
         background-color:$orange;
         color: #ffffff;
@@ -86,6 +98,7 @@
         font-size: 18px;
         border: none;
         cursor: pointer;
+
         &-catalog{
             margin-right: 10px;
         }
@@ -129,12 +142,4 @@
 
 
 
-
-
-
-
-// -----------main__slider---------
-.main__slider{
-    margin-top: 53px;
-}
 

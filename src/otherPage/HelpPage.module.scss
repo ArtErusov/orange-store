@@ -1,0 +1,77 @@
+@import '../scss/libs/reset';
+@import '../scss/libs/MainVariable.scss';
+
+.container{
+width: 870px;
+margin: 10px auto;
+}
+
+.chat{
+min-height: 400px;
+border-radius: 10px;
+border: 2px solid $gray;
+margin-top: 20px;  
+
+    &__item{
+    width: 500px;
+    min-height: 100px;
+    margin: 10px;  
+    border-radius: 8px;
+    border: 1px solid $gray;
+    padding: 10px;
+
+        &_flex{
+            display: flex;
+            justify-content: space-between;
+            color: $gray;
+        }
+
+        &_text{
+            padding: 10px 0;
+            max-width: 480px ;
+        }
+
+        &_btn{
+            padding-left: 412px;
+            color: $gray;
+        }
+    }
+}
+
+.input{
+    display: flex;
+    margin-top: 20px;
+    &__text{
+        width: 6000px;
+        height: 169px;
+        border-radius: 8px;
+        border: 2px solid $gray;
+        padding: 10px;
+        resize: none;
+    }
+    &__data{
+        &_name, &_btn {
+            margin-top: 10px;
+        }
+
+        &_number, &_name {
+            margin-left: 10px;
+            width: 300px;
+            height: 50px; 
+            border: 2px solid $gray;
+            border-radius: 8px;
+            padding: 0 10px;
+        }
+
+        &_btn {
+            background-color: $orange;
+            width: 300px;
+            height: 50px; 
+            border-radius: 8px;
+            margin-left: 10px;
+            font-weight: 700;
+            color: rgb(255, 255, 255);
+        }
+     
+    }
+}

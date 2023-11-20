@@ -7,6 +7,7 @@ import MainHeader from './MainHeader/MainHeader';
 import ProductPage from './ProductPage/ProductPage';
 import NotFound from './otherPage/NotFound';
 import CartPage from './CartPage/CartPage';
+import HelpPage from './otherPage/helpPage/HelpPage'
 
 
 // slider
@@ -15,63 +16,65 @@ import slidAW from "./assets/img/slider/slider-aw.png";
 import slidCP from "./assets/img/slider/slider-cp.png";
 import slidER from "./assets/img/slider/slider-er.png";
 
-// передача файлов из json
-// import cardFiling from "./assets/componentData/cardFiling.json";
+// import cardFiling from "./assets/componentData/cardFiling.json"; передача файлов из json - резерв
 
-
+const AppContext = React.createContext('defaultValue'); // пока-что не использую
 
 
 function App() {
 
-  const sliderItems = {
-    slidW3:slidW3,
-    slidAW:slidAW,
-    slidCP:slidCP,
-    slidER:slidER
-  };
+  const sliderItems = { slidW3:slidW3, slidAW:slidAW, slidCP:slidCP, slidER:slidER };
   const cityList = ['Москва', 'Санкт-Петербург', 'Екатеринбург', 'Казань', 'Ростов-на-Дону', 'Тула', 'Минск' ];
   const selectCategory = ['Все платформы','PC','Ps4','Ps5','switch','Xbox'];
 
   const [searchValue, setSearchValue] = React.useState(''); //результаты поиска
-
   const [cardFiling, setCardFiling] = React.useState([]);
-  const [isLoading, setIsLoading] = React.useState(true);
-console.log(searchValue);
+  const [isLoading, setIsLoading] = React.useState(true); 
 
   // тут передаю информацию из выбора категорий и сортировки, проблема в том что я фактически 2 раза юзаю юз стайт в 9 видео есть как это обойти+ 
+  // ПЕРЕДЕЛАТЬ
   const [category, setCategory] = React.useState(0);
   const [sort, setSort] = React.useState('Все платформы');
-  const saveCategoryHandler = (index) =>{setCategory(index);}; // данные из карточек
-  const saveSortHandler = (index) =>{setSort(index);};  // данные из карточек
-  const serverCategory = selectCategory[category];
+  const [currentPage, setCurrentPage] = React.useState(0);
+  const saveCategoryHandler = (index) =>{setCategory(index);}; // данные из карточек cards
+  const saveSortHandler = (index) =>{setSort(index);};  // данные из карточек cards
+  const saveCurrentHandler = (index) =>{setCurrentPage(index) };   // данные из карточек cards
+  const serverCategory = selectCategory[category]; // вытаскивания из массива название по индексу для поиска
   // --------------------
 
+console.log(currentPage + '  ПРОБЛЕМА');
 
-    React.useEffect(() => {
+    React.useEffect(() => { //получение данных с сервера
       setIsLoading(true);
       const orderSort = sort.includes('-') ? `asc` : `desc`;
       const orderCategory = serverCategory === 'Все платформы' ? `` : `&platforms=${serverCategory}`;
-      fetch(`https://65523e2c5c69a7790329c0eb.mockapi.io/items?sortBy=${sort.replace('-', '')}${orderCategory}&order=${orderSort}`)
+      const orderRecovery = `page=${currentPage}&limit=5&`; // задаем сколько позиций будет отображаться при этом коде из корзины пропадают товары
+      fetch(`https://65523e2c5c69a7790329c0eb.mockapi.io/items?${orderRecovery}sortBy=${sort.replace('-', '')}${orderCategory}&order=${orderSort}`)
       .then((res) => res.json())
       .then((arr) => {
         setCardFiling(arr);
-        setIsLoading(false);
+        setIsLoading(false); 
       });
-    }, [category, sort]);
-
+    }, [category, sort, currentPage]);
 
 
 
 
   return (<div>
+    <AppContext.Provider>
       <MainHeader searchValue={searchValue} setSearchValue={setSearchValue} cityList={cityList}/>
       <Routes>
-         <Route  path="" element={<MainPage searchValue={searchValue} onSaveCategory={saveCategoryHandler} onSaveSort={saveSortHandler} 
-         isLoading={isLoading}  cardFiling={cardFiling} sliderItems={sliderItems} selectCategory={selectCategory}/>} />
+         <Route  path="" element={<MainPage
+          onSaveCategory={saveCategoryHandler} onSaveSort={saveSortHandler} onSaveCurrent={saveCurrentHandler} 
+          isLoading={isLoading}  cardFiling={cardFiling} sliderItems={sliderItems} 
+          selectCategory={selectCategory} searchValue={searchValue}/>} />
+                 
          <Route  path="/p" element={<ProductPage />} />
          <Route  path='*' element={<NotFound />} />
          <Route  path='/cart' element={<CartPage cardFiling={cardFiling}/>} />
+         <Route  path='/help' element={<HelpPage />} />
       </Routes>
+    </AppContext.Provider>
    </div>
   );
 }
