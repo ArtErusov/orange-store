@@ -1,5 +1,6 @@
 import Slider from './slider/Slider';
 import Cards from './Cards/Cards'
+import React, {Fragment} from 'react';
 
 
 
@@ -10,14 +11,14 @@ const saveSortHandler = (index) =>{ props.onSaveSort(index) };   //переда�
 const saveCurrentHandler = (index) =>{ props.onSaveCurrent(index) };   //передача на верх из Pagiation
 
 
-  return (<div>
+  return (<Fragment>
       <Slider sliderItems={props.sliderItems} />
       <Cards searchValue={props.searchValue} onSaveCategory={saveCategoryHandler} onSaveSort={saveSortHandler}
 
       onSaveCurrent={saveCurrentHandler}
       
-       isLoading={props.isLoading} cardFiling={props.cardFiling} selectCategory={props.selectCategory} />
-   </div>
+      isLoading={props.isLoading} cardFiling={props.cardFiling} selectCategory={props.selectCategory} />
+   </Fragment>
   );
 }
 

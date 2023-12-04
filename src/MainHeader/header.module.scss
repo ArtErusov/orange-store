@@ -1,0 +1,63 @@
+@import '/src/scss/app.scss';
+
+.selectCity{
+    display: flex;
+    position: relative;
+    cursor: pointer;
+
+    &__popup {
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    background-color: #fff;
+    margin-top: 25px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+    padding: 10px 0;
+    width: 180px;
+
+      li {
+        padding: 12px 20px;
+        cursor: pointer;
+        &.active,
+        &:hover {
+          background: rgba(255, 72, 0, 0.05)
+        }
+
+        &.active {
+          font-weight: bold;
+          color: $orange;
+        }
+    }
+  }
+  
+  svg{
+    margin-top: 2px;
+    margin-left: 10px;
+}
+}
+
+.headerTop{
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 15px; 
+  .shares{
+      color: $orange;
+      font-weight: 600;
+  }
+  &__left{
+      display: flex;
+      .menu__item{
+          padding-right: 30px;
+      }
+  }
+
+  &__right{
+     display: flex;
+      .menu__item{
+          padding-left: 30px;
+      }  
+  }
+}
