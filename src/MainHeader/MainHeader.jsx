@@ -3,8 +3,6 @@ import TopHeader from "./TopHeader";
 import React, {Fragment} from 'react';
 
 
-
-
 function MainHeader(props) { 
   return (<Fragment>
     <TopHeader cityList={props.cityList} />
