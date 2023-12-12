@@ -5,9 +5,9 @@ import './scss/app.scss';
 import MainPage from './mainPage/MainPage';
 import MainHeader from './MainHeader/MainHeader';
 import ProductPage from './ProductPage/ProductPage';
-import NotFound from './otherPage/NotFound';
+import NotFound from './components/NotFound';
 import CartPage from './CartPage/CartPage';
-import HelpPage from './otherPage/helpPage/HelpPage'
+import HelpPage from './components/oldPage/helpPage/HelpPage'
 
 
 // slider

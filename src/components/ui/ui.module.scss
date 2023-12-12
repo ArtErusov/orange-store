@@ -1,0 +1,15 @@
+@import '../../scss/app.scss';
+
+.button{
+    color: #fff;
+    background-color: $orange;
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-size: 18px;
+    transition: 0.2s;
+        &:hover{
+            background-color: $gray;
+            padding: 10px 21px;  
+            box-shadow:0px 0px 4px rgba(0, 0, 0, 0.25); 
+        }
+    }

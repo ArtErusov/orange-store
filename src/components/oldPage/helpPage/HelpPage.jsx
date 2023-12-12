@@ -1,4 +1,4 @@
-import styles from '../HelpPage.module.scss';
+import styles from './HelpPage.module.scss';
 import TransitionTextPage from './TransitionTextPage';
 import React from 'react';
 
