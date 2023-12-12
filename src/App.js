@@ -8,6 +8,8 @@ import ProductPage from './ProductPage/ProductPage';
 import NotFound from './components/NotFound';
 import CartPage from './CartPage/CartPage';
 import HelpPage from './components/oldPage/helpPage/HelpPage'
+import Registration from './components/registration';
+
 
 
 // slider
@@ -30,6 +32,14 @@ function App() {
   const [searchValue, setSearchValue] = React.useState(''); //результаты поиска
   const [cardFiling, setCardFiling] = React.useState([]);
   const [isLoading, setIsLoading] = React.useState(true); 
+
+ // блок отображения модального окна регистрации  
+const [registrationIsVisible, setRegistrationIsVisible] = React.useState(false)
+const registrationShowHandler = () => { setRegistrationIsVisible(true); };
+const registrationHideHandler = () => { setRegistrationIsVisible(false); };
+//--------------------------------------------------
+
+
 
   // тут передаю информацию из выбора категорий и сортировки, проблема в том что я фактически 2 раза юзаю юз стайт в 9 видео есть как это обойти+ 
   // ПЕРЕДЕЛАТЬ
@@ -60,9 +70,10 @@ console.log(currentPage + '  ПРОБЛЕМА');
 
 
 
-  return (<div>
+  return (
     <AppContext.Provider>
-      <MainHeader searchValue={searchValue} setSearchValue={setSearchValue} cityList={cityList}/>
+      <MainHeader searchValue={searchValue} onShowRegistration={registrationShowHandler} setSearchValue={setSearchValue} cityList={cityList}/>
+      {registrationIsVisible && <Registration onHideRegistration={registrationHideHandler}/>}
       <Routes>
          <Route  path="" element={<MainPage
           onSaveCategory={saveCategoryHandler} onSaveSort={saveSortHandler} onSaveCurrent={saveCurrentHandler} 
@@ -75,7 +86,6 @@ console.log(currentPage + '  ПРОБЛЕМА');
          <Route  path='/help' element={<HelpPage />} />
       </Routes>
     </AppContext.Provider>
-   </div>
   );
 }
 

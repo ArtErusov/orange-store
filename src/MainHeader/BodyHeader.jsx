@@ -28,10 +28,10 @@ function BodyHeader(props) {
             <IconHeaderCart />
             <div>Корзина</div>
           </Link>
-          <Link to="http://localhost:3000/cart" className={styles.bodyHead__action_login} >
+          <div onClick={props.onShowRegistration} className={styles.bodyHead__action_login} >
             <IconHeaderLogin />
             <div>Войти</div>
-          </Link>
+          </div>
         </div>
       </div>
     );

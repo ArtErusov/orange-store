@@ -2,9 +2,7 @@ import styles from './ui.module.scss';
 
 const Button = (props) => {
     return(
-    <button className={styles.button}>
-     {props.name}
-    </button>
+    <button onClick={props.onClick} className={styles.button}>{props.name}</button>
     );
 }
 
