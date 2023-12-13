@@ -3,11 +3,11 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 
 import './scss/app.scss';
 import MainPage from './mainPage/MainPage';
-import MainHeader from './MainHeader/MainHeader';
-import ProductPage from './ProductPage/ProductPage';
-import NotFound from './components/NotFound';
-import CartPage from './CartPage/CartPage';
-import HelpPage from './components/oldPage/helpPage/HelpPage'
+import MainHeader from './Header/MainHeader';
+import ProductPage from './Page/ProductPage/ProductPage';
+import PageNotFound from './components/PageNotFound';
+import CartPage from './Page/CartPage/CartPage';
+import HelpPage from './components/oldPage/helpPage/HelpPage';
 import Registration from './components/registration';
 
 
@@ -75,15 +75,15 @@ console.log(currentPage + '  ПРОБЛЕМА');
       <MainHeader searchValue={searchValue} onShowRegistration={registrationShowHandler} setSearchValue={setSearchValue} cityList={cityList}/>
       {registrationIsVisible && <Registration onHideRegistration={registrationHideHandler}/>}
       <Routes>
-         <Route  path="" element={<MainPage
+        <Route  path="" element={<MainPage
           onSaveCategory={saveCategoryHandler} onSaveSort={saveSortHandler} onSaveCurrent={saveCurrentHandler} 
           isLoading={isLoading}  cardFiling={cardFiling} sliderItems={sliderItems} 
           selectCategory={selectCategory} searchValue={searchValue}/>} />
-                 
-         <Route  path="/p" element={<ProductPage />} />
-         <Route  path='*' element={<NotFound />} />
-         <Route  path='/cart' element={<CartPage cardFiling={cardFiling}/>} />
-         <Route  path='/help' element={<HelpPage />} />
+               
+        <Route  path="/p" element={<ProductPage />} />
+        <Route  path='*' element={<PageNotFound />} />
+        <Route  path='/cart' element={<CartPage cardFiling={cardFiling}/>} />
+        <Route  path='/help' element={<HelpPage />} />
       </Routes>
     </AppContext.Provider>
   );

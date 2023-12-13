@@ -3,12 +3,7 @@ import sadnessMobile from '../assets/img/sadnessMobile.svg';
 import Button from './ui/Button';
 import { Link } from 'react-router-dom';
 
-const container = {
-    padding: 12,
-    background: 'red'
-}
-
-const NotFound = () => {
+const PageNotFound = () => {
     return(
         <div className={styles.not_faund}><img src={sadnessMobile} alt="И тут неудача" /> 
             <p>Уупс 404: что-то пошло не так.</p>
@@ -21,6 +16,6 @@ const NotFound = () => {
 }
 
 
-export default NotFound;
+export default PageNotFound;
 
 
